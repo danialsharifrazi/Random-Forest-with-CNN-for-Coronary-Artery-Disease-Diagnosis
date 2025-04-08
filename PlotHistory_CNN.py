@@ -27,7 +27,7 @@ def NetPlot(net_history,fold_number):
     plt.xlabel('Epochs')
     plt.ylabel('Loss')
     plt.plot(losses,color='black')
-    plt.plot(val_losses,color='green')
+    plt.plot(val_losses,color='red')
     plt.legend(['Train Data','Validation Data'])
     plt.savefig(f'./results/CNN/fold{fold_number}/Loss Diagram.png')
 
@@ -36,7 +36,7 @@ def NetPlot(net_history,fold_number):
     plt.xlabel('Epochs')
     plt.ylabel('Accuracy')
     plt.plot(accuracies,color='black')
-    plt.plot(val_accuracies,color='green')
+    plt.plot(val_accuracies,color='red')
     plt.legend(['Train Data','Validation Data'])       
     plt.savefig(f'./results/CNN/fold{fold_number}/Accuracy Diagram.png')
     
